@@ -14,3 +14,5 @@ This project applies machine learning to remote sensing data to automatically cl
 * **Geospatial Libraries:** `rasterio`, `geopandas`, `shapely`.
 * **Machine Learning:** `scikit-learn` (Random Forest).
 * **GIS Software:** QGIS (for training data digitization and CRS management).
+  <img width="3507" height="1602" alt="Combined Kangra" src="https://github.com/user-attachments/assets/308499b6-bc0b-4e17-9a6e-64970b047106" />
+
