@@ -7,19 +7,14 @@ import matplotlib.pyplot as plt
 def run_ml_classification():
     print("Starting Machine Learning Process...")
 
-
     width = 100
     height = 100
     bands = 3
     
-  
     print("1. Generating fake satellite image...")
     fake_satellite_image = np.random.rand(bands, height, width)
 
-
     flattened_pixels = fake_satellite_image.transpose(1, 2, 0).reshape(-1, bands)
-
-
 
     print("2. Preparing training data...")
     
@@ -36,7 +31,6 @@ def run_ml_classification():
     y_train = np.concatenate((water_answers, forest_answers))
 
 
-    
     print("3. Training the Random Forest...")
    
     model = RandomForestClassifier(n_estimators=50, random_state=42)
@@ -50,7 +44,6 @@ def run_ml_classification():
     predicted_pixels = model.predict(flattened_pixels)
 
 
-    
     print("5. Rebuilding map...")
     
     final_map_grid = predicted_pixels.reshape(height, width)
